@@ -1,3 +1,4 @@
+/*
 names = ['Piotr', 'Anna', 'Michał', 'Paulina', 'Mateusz', 'Magda'];
 
 class Students {
@@ -33,3 +34,4 @@ console.log(students.get());
 
 
 
+*/
