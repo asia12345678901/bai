@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<title>Typing test</title>
 		<meta charset="UTF-8">
 	</head>
+
 	<body>
 		<h1>How fast are your fingers?</h1>
 		<h3>You have 30 seconds. Just start typing...</h3>
@@ -20,11 +22,18 @@
 		Przeciw nim sterczy biała, wąska, zaostrzona,<br>
 		Jak głaz bodzący morze, reduta Ordona.</p>
 		
-		<textarea rows="15" cols="50"></textarea><br>
-		
+		<textarea rows="15" cols="50" id="mojTextBox" oninput="setTimeout(calculateResult,30000)" ></textarea><br>
+		<p id="mojWynik"></p>
+
 		<script>
-			// a JavaScript code here ...
-			
+			function calculateResult(element) {
+				let tresc = document.getElementById("mojTextBox").value;
+				let iloscSpacji = tresc.split(" ").length;
+				let iloscEnterow = tresc.split("\n").length;
+				let iloscSlow = iloscSpacji + iloscEnterow-1;
+				let iloscZnakow = tresc.length;
+				document.getElementById("mojWynik").innerHTML = `Time's up!<br> You've written ${iloscSlow} words - ${iloscZnakow} characters.<br><br>`;
+			}
 		</script>
 		
 	</body>

@@ -4,10 +4,12 @@
 		<title>Pink Floyd</title>
 		<meta charset="UTF-8">
 	</head>
+
 	<body ondblclick="paintYellow(this)">
 		<h1 onclick="addTitle(this)">Another Brick in the Wall</h1>
 		<h3 onclick="showDescription()">Pink Floyd</h3>
-		<p onclick="toItalic(this)">We don't need no education<br>
+		<p onclick="toItalic(this)" oncopy="showCopyright()">
+		We don't need no education<br>
 		We don't need no thought control<br>
 		No dark sarcasm in the classroom<br>
 		Teachers leave them kids alone<br>
@@ -15,13 +17,13 @@
 		All in all it's just another brick in the wall<br>
 		All in all you're just another brick in the wall</p>
 		
-		<p id="opis" style="visibility: hidden;">Pink Floyd were an English rock band formed in London.<br>
+		<p id="opis" style="visibility: hidden;" onclick="showImage()"">Pink Floyd were an English rock band formed in London.<br>
 		They achieved international acclaim with their progressive<br>
-		and psychedelic music.</p>
+		and psychedelic music.<br></p>
 		
 		<script>
 			function addTitle(element){
-				element.innerHTML += "  Part 2"
+				element.innerHTML += "  Part 2";
 			}
 			function showDescription(){
 				document.getElementById('opis').style.visibility = "visible"
@@ -29,11 +31,18 @@
 			function toItalic(element){
 				element.style.fontStyle = "italic";
 			}
-
 			function paintYellow(element){
 				element.style.backgroundColor = "yellow";
 			}
-
+			function showCopyright(){
+				alert("Copyright 1979 by Pink Floyd");
+			}
+			function showImage(element) {
+				let img = document.createElement('img');
+				img.src = "https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg";
+				opis.appendChild(img);
+			}
+			
 			
 		</script>
 	</body>
