@@ -1,12 +1,9 @@
-/*
-let a = 2;
-let b = 3;
+let x = 2;
+let y = 3;
 let h = 4;
 
-const obliczPole = (b,c,d) => {
+const obliczPoleTrapezu = (b,c,d) => {
     return ((b+c)*d)/2;
     }
 
-console.log(`Pole trapezu to: ${obliczPole(a,b,h)}`);
-    
-*/
+console.log(`Pole trapezu o bokach ${x} i ${y} oraz wysokości ${h} to: ${obliczPoleTrapezu(x,y,h)}`);

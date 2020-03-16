@@ -1,4 +1,3 @@
-/*
 var i = 2;
 
 while (i < 15) {
@@ -14,4 +13,3 @@ for(let n=2; n<=14; n+=4)
       {
         console.log(n + "\n");
       }
-*/

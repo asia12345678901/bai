@@ -6,19 +6,15 @@ city = 'Kraków';
 zip = '30-781';
 country = 'Poland';
 
-
-/* 
-dr Mateusz Kubicki
+/*dr Mateusz Kubicki
 ul. Długa 15
 30-781 Kraków
 POLAND
 */
 
-/*
 console.log(`${title} ${name} ${surname} 
 ul. ${street}
 ${zip} ${city}
 ${country}\n`);
 
 console.log(title + " " + name + " " + surname + "\n" + "ul. " + street + "\n" + zip + " " + city + "\n" + country );
-*/

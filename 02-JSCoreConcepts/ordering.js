@@ -1,4 +1,3 @@
-/*
 const reverse = function(arr) {
     arrReversed = [];
     arr.forEach(item => arrReversed.push(item));
@@ -29,4 +28,3 @@ console.log(reverse(numbers));
 console.log(even(numbers));
 console.log(reverse(even(numbers)));
 console.log(even(sort(numbers)));
-*/
